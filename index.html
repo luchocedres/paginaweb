@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpieza Mamá - Catálogo</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🏠 Artículos de Limpieza "Mamá"</h1>
+
+    <div class="filtros">
+        <button onclick="filtrar('todos')">Todos</button>
+        <button onclick="filtrar('cocina')">Cocina</button>
+        <button onclick="filtrar('baño')">Baño</button>
+        <button onclick="filtrar('lavadero')">Lavadero</button>
+    </div>
+
+    <div id="carrito-seccion" style="display:none; border: 2px solid green; padding: 10px; margin: 20px;">
+        <h2>Tu Pedido</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="enviarWhatsApp()" style="background: #25d366; color: white;">Finalizar Pedido 💬</button>
+    </div>
+
+    <div id="contenedor-productos" style="display: flex; flex-wrap: wrap; gap: 20px;">
+        </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
