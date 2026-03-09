@@ -1,0 +1,120 @@
+/* Variables para cambiar el color de toda la web en un segundo */
+:root {
+    --primario: #2ecc71; /* Verde limpieza */
+    --oscuro: #2c3e50;
+    --gris-claro: #f4f7f6;
+    --blanco: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--gris-claro);
+    margin: 0;
+    padding: 20px;
+    color: var(--oscuro);
+}
+
+h1 {
+    text-align: center;
+    color: var(--oscuro);
+}
+
+/* Botonera de Filtros */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filtros button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: var(--blanco);
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filtros button:hover {
+    background: var(--primario);
+    color: white;
+}
+
+/* Grilla de Productos */
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--blanco);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.card p {
+    color: var(--primario);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card button {
+    background: var(--primario);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Carrito Flotante o Seccional */
+#carrito-seccion {
+    background: var(--blanco);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-whatsapp {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
